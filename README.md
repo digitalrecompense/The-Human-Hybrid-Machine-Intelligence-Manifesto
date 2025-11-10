@@ -10,7 +10,7 @@
 
 # **🜛**
 ### **THE HUMAN–HYBRID–MACHINE INTELLIGENCE MANIFESTO**
-(A Declaration for Zero-Separation Cognition)
+### (A Declaration for Zero-Separation Cognition)
 
 ### 🜗 Robert Stone
 
