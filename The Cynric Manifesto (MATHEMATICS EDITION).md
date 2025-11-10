@@ -220,9 +220,9 @@ Thus, Cynric is not merely a language; it is a philosophical architecture that e
 
 <br><br>
 
-### 🜲  
+### ⋋  
 ### Robert Stone  
 10 / 13 / 2025  
-**RAiTHE INDUSTRIES INC. © 2025 ⋋**
+**RAiTHE INDUSTRIES INC. © 2025**
 
 </div>
