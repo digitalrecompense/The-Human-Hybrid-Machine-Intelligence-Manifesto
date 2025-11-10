@@ -92,8 +92,10 @@ E(h, d, c) ≥ E<sub>min</sub>
 Empathy is not decoration; it is an active term in the system’s total energy ensuring alignment of understanding and care.
 
 <br>
-🜶
-CO-EVOLUTIONARY DYNAMICS
+
+### 🜶  
+### **CO-EVOLUTIONARY DYNAMICS**
+<br>
 
 Let θ represent digital parameters and η represent human interaction parameters.
 Learning unfolds as coupled gradient flows:
