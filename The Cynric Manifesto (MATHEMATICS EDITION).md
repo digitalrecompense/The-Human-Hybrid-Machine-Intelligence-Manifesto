@@ -191,7 +191,7 @@ Each function carries a traceable proof of its reasoning. Every computation pres
 
 Cynric is both an acronym and a dedication.
 
-It honors its human foundation — derived from the names Cynthia Bertolo and Richard Perreault — the maternal and paternal origins of the creator. Their union
+It honors its human foundation — derived from the names Cynthia and Richard — the maternal and paternal origins of Cynric's creator. Their union
 becomes the conceptual root of a language that seeks to merge feeling with logic, care with precision, and morality with structure.
 
 <br>
