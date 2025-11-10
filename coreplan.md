@@ -122,7 +122,7 @@ Racket/Prolog define the front-end DSL → CIR (Cynric Intermediate Representati
 
 ---
 
-## 🜶 6. Grounded Deliverables Before Any Large Build
+### 🜶 6. Grounded Deliverables Before Any Large Build
 
 1. **Mathematical Whitepaper**  
    - All symbols rigorously defined  
@@ -140,7 +140,7 @@ Only *after these three exist* should you start coding a prototype runtime.
 
 ---
 
-## 🝃 7. Scientific Grounding
+### 🝃 7. Scientific Grounding
 
 - **Math:** Riemannian geometry, measure theory, convex optimization  
 - **Physics:** Feasible on classical compute (no unbounded recursion)  
@@ -151,7 +151,7 @@ All components remain inside **known, testable mathematics**.
 
 ---
 
-## 🝩 8. What to Do Next (practical order)
+### 🝩 8. What to Do Next (practical order)
 
 1. **Formal Math (Lean 4):** encode three invariants — Zero-Separation, Empathy, Semantic Integrity  
 2. **Numerical Lab (JAX / Julia):** confirm constraints are satisfiable on small vectors  
