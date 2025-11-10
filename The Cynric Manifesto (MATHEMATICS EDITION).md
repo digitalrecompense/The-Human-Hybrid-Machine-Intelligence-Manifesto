@@ -60,7 +60,7 @@ Where:
 <br><br>
 This combined structure is called beliefspace.
 
-<br><br>
+<br>
 
 Beliefspace defines probability distributions over propositions P:
 </div>
