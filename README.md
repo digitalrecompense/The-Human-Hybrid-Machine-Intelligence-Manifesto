@@ -8,11 +8,7 @@
 
 By Robert Stone
 
-Oct/11/2025
-
 <br>
-
-
 
 ### **🜛**
 ### **THE HUMAN–HYBRID–MACHINE INTELLIGENCE MANIFESTO**
