@@ -2,8 +2,12 @@
 
 # The Human-Hybrid-Machine Intelligence Manifesto
 
-#### **By Robert Stone** 
-#### **Oct/11/2025**
+<br>
+
+**By Robert Stone** 
+**Oct/11/2025**
+
+<br>
 
 [🌐 **View the Theoretical (AGI) Stack**](https://digitalrecompense.github.io/The-Human-Hybrid-Intelligence-Manifesto/)
 
