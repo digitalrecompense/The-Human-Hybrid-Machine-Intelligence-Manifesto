@@ -6,8 +6,7 @@
 
 <br>
 
-By Robert Stone 
-
+By Robert Stone
 Oct/11/2025
 
 <br>
