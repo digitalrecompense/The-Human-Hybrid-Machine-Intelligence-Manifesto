@@ -1,7 +1,7 @@
 <div align="center">
 
-### **🜛**  
-### **Cynric Development Plan — Grounded Framework**
+## **🜛**  
+## **Cynric Development Plan — Grounded Framework**
 
 ---
 
