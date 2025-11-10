@@ -50,7 +50,7 @@ C = shared contextual field (temporal, social, affective)
 P = physical world
 
 This combined structure is called beliefspace.
-
+<br><br>
 Beliefspace defines probability distributions over propositions P:
 
 B = (Δ(P), Σ, μ)
