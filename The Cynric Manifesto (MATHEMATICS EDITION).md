@@ -109,10 +109,13 @@ Learning is modeled as coupled gradient flows between human (η) and digital (θ
 ### **dθ/dt = -∇θ(L<sub>task</sub> + λ₁L<sub>zero_sep</sub> + λ₂L<sub>empathy</sub> + λ₃L<sub>semantic</sub> + λ₄L<sub>transparency</sub>)**  
 
 <br>
+Human and digital cognition evolve together in closed mutual loops — co-agency and co-adaptation.
+
+<br>
 
 ### **dη/dt = -∇η(L<sub>effort</sub> - αE + βInfoGain(D<sub>θ</sub> ; H<sub>η</sub>))**
 
-Human and digital cognition evolve together in closed mutual loops — co-agency and co-adaptation.
+
 
 <br>
 
