@@ -34,7 +34,7 @@ Let:
 
 <div align="center">
   
-### **B = (H × D × C × P)**
+B = (H × D × C × P)
 
 </div>
 
@@ -63,7 +63,7 @@ This combined structure is called beliefspace.
 
 Beliefspace defines probability distributions over propositions P:
 <br><br>
-B = (Δ(P), Σ, μ)
+### **B = (Δ(P), Σ, μ)**
 
 <br>
 
