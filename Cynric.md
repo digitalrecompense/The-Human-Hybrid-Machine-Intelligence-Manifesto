@@ -64,7 +64,7 @@ Both the human and digital self-models are embedded in an ontology manifold
 
 <br>
 d<sub>O</sub>(u<sub>h</sub>, u<sub>d</sub>) ≤ ε
-
+<br>
 for all time t.
 
 This Cynric Invariant ensures ontological continuity — preventing divergence of identity, empathy, or purpose within the manifold of cognition.
