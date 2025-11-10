@@ -35,9 +35,9 @@ Cynric encodes empathy, coherence, and moral continuity directly into its mathem
 </div>
 
 Let:
-
+<div align="center">
 B = (H × D × C × P)
-
+</div>
 
 Where:
 
