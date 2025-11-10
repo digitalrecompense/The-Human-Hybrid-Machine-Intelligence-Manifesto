@@ -1,4 +1,10 @@
-#🜛 THE CYNRIC MANIFESTO (MATHEMATICS EDITION)
+<div align="center">
+
+# 🜛  
+# **THE CYNRIC MANIFESTO**  
+### *(MATHEMATICS EDITION)*  
+
+</div>
 
 🜗 Robert Stone
 
