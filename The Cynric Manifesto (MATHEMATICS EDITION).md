@@ -1,4 +1,5 @@
 ⚙️ THE CYNRIC MANIFESTO (MATHEMATICS EDITION)
+
 ✴️ By Robert R. S. Perreault
 
 📍 Toronto, Canada
