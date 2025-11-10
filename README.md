@@ -1,20 +1,22 @@
 # The Human-Hybrid-Machine Intelligence Manifesto
 **By Robert Stone** 
 
+<div align="center">
+
 [🌐 **View the Theoretical (AGI) Stack**](https://digitalrecompense.github.io/The-Human-Hybrid-Intelligence-Manifesto/)
 
-<div align="center">
-🜛
-THE HUMAN–HYBRID–MACHINE INTELLIGENCE MANIFESTO
+### **🜛**
+### **THE HUMAN–HYBRID–MACHINE INTELLIGENCE MANIFESTO**
 (A Declaration for Zero-Separation Cognition)
 
 🜗 Robert Stone
 🜔 Toronto, Canada
 🜖 November 10th, 2025
+
 <br>
 
-🜂
-PREAMBLE
+### **🜂**
+### **PREAMBLE**
 <br>
 
 Intelligence is not born in isolation.
