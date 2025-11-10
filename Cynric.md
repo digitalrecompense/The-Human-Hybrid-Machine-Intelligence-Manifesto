@@ -187,8 +187,9 @@ Each function carries a traceable proof of its reasoning.
 Every computation preserves semantic and moral continuity.
 
 <br>
-❂
-NAME ORIGIN AND SYMBOLISM
+
+### ❂  
+### **NAME ORIGIN AND SYMBOLISM**
 
 Cynric is both an acronym and a dedication.
 
