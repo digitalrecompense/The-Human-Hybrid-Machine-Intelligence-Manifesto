@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RAiTHE INDUSTRIES INC. © 2025 | Theoretical Cortextual-Mainframe</title>
+  <style>
+    :root {
+      --bg0: #000000;
+      --bg1: #0a0a0a;
+      --bg2: #111111;
+      --fg0: #ffffff;
+      --fg1: #d6d6d6;
+      --fg2: #aaaaaa;
+      --glass: rgba(255,255,255,0.06);
+      --line: rgba(255,255,255,0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, var(--bg0) 0%, var(--bg1) 45%, var(--bg2) 100%);
+      color: var(--fg0);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    header {
+      width: 100%;
+      text-align: center;
+      padding: 1.2rem 0 .5rem;
+      background: rgba(0,0,0,0.85);
+      color: var(--fg0);
+      font-size: 1.2rem;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-shadow: 0 0 14px rgba(255,255,255,.25);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(6px);
+      position: relative;
+      z-index: 5;
+    }
+    header .brand { display: block; font-size: 1.15rem; }
+    header .subtitle {
+      display: block;
+      font-size: .9rem;
+      font-weight: 400;
+      letter-spacing: .12em;
+      color: var(--fg1);
+      margin-top: .25rem;
+      text-shadow: 0 0 8px rgba(255,255,255,.15);
+    }
+
+    .actions {
+      position: absolute;
+      right: 14px;
+      top: 14px;
+      display: flex;
+      gap: .5rem;
+    }
+    .btn {
+      border: 1px solid var(--line);
+      background: var(--glass);
+      color: var(--fg1);
+      padding: .4rem .7rem;
+      border-radius: 999px;
+      font-size: .8rem;
+      cursor: pointer;
+      transition: transform .15s ease, background .2s ease, color .2s ease;
+      backdrop-filter: blur(6px);
+    }
+    .btn:hover { transform: translateY(-1px); color: var(--fg0); background: rgba(255,255,255,.08); }
+
+    .iframe-wrap {
+      position: relative;
+      width: min(92vw, 1320px);
+      height: calc(100vh - 132px);
+      margin: 1.4rem auto 0;
+      border-radius: 14px;
+      background: radial-gradient(60% 80% at 50% 50%, rgba(255,255,255,0.06) 0%, rgba(0,0,0,0.6) 100%);
+      border: 1px solid var(--line);
+      box-shadow: 0 0 40px rgba(255,255,255,0.18), inset 0 0 16px rgba(255,255,255,0.05);
+      overflow: hidden;
+    }
+    iframe {
+      position: absolute;
+      inset: 0;
+      width: 100% !important;
+      height: 100% !important;
+      border: 0;
+      display: block;
+    }
+
+    /* Branded loading overlay to hide Voyant splash */
+    .overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background: radial-gradient(circle at 50% 45%, rgba(20,20,20,.95), rgba(0,0,0,1));
+      transition: opacity 900ms ease-out;
+      z-index: 3;
+    }
+    .overlay.hidden { opacity: 0; pointer-events: none; }
+    .spinner {
+      width: 44px; height: 44px; border-radius: 50%;
+      border: 3px solid rgba(255,255,255,.18);
+      border-top-color: #ffffff;
+      animation: spin 1s linear infinite; margin-bottom: .9rem;
+      box-shadow: 0 0 12px rgba(255,255,255,.18);
+    }
+    @keyframes spin { from { transform: rotate(0) } to { transform: rotate(360deg) } }
+    .overlay-text { color: var(--fg0); font-size: .95rem; letter-spacing: .08em; opacity: .85; }
+
+    /* References modal */
+    .modal-backdrop {
+      position: fixed; inset: 0; background: rgba(0,0,0,.6); display: none; align-items: center; justify-content: center; z-index: 20;
+    }
+    .modal-backdrop.show { display: flex; }
+    .modal {
+      width: min(92vw, 980px);
+      max-height: 82vh;
+      background: rgba(10,10,10,.96);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      overflow: hidden;
+      color: var(--fg1);
+      box-shadow: 0 20px 60px rgba(0,0,0,.8);
+      display: grid;
+      grid-template-rows: auto 1fr;
+    }
+    .modal header { text-align: left; padding: .9rem 1rem; font-size: 1rem; font-weight: 700; border-bottom: 1px solid var(--line); background: rgba(0,0,0,.7); }
+    .modal .content { padding: 1rem; overflow: auto; }
+    .cite { margin-bottom: 1rem; }
+    .cite h3 { margin: .25rem 0 .4rem; font-size: .9rem; color: var(--fg0); }
+    pre { margin: 0; padding: .7rem .8rem; background: rgba(255,255,255,.04); color: var(--fg1); border: 1px solid var(--line); border-radius: 8px; overflow: auto; white-space: pre-wrap; word-break: break-word; }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: .85rem; }
+    .modal .close { position: absolute; right: 16px; top: 12px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const frame = document.getElementById('voyant');
+      const overlay = document.querySelector('.overlay');
+
+      // Ensure explicit https if opened via file:// with protocol-relative src (defensive)
+      const src = frame.getAttribute('src') || '';
+      if (location.protocol === 'file:' && src.startsWith('//')) frame.src = 'https:' + src;
+
+      frame.addEventListener('load', () => setTimeout(() => overlay.classList.add('hidden'), 500));
+
+      // Modal logic
+      const openBtn = document.getElementById('openRefs');
+      const backdrop = document.getElementById('refsModal');
+      const closeBtn = document.getElementById('closeRefs');
+      const close = () => backdrop.classList.remove('show');
+      openBtn.addEventListener('click', () => backdrop.classList.add('show'));
+      closeBtn.addEventListener('click', close);
+      backdrop.addEventListener('click', (e) => { if (e.target === backdrop) close(); });
+      document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <span class="brand">RAiTHE INDUSTRIES INC. © 2025</span>
+    <span class="subtitle">Theoretical Cortextual-Mainframe (AGI Stack)</span>
+    <div class="actions">
+      <button id="openRefs" class="btn" title="View bibliographic references">References</button>
+    </div>
+  </header>
+
+  <div class="iframe-wrap">
+    <div class="overlay">
+      <div class="spinner"></div>
+      <div class="overlay-text">Initializing RAiTHE Collocates Graph…</div>
+    </div>
+    <!-- User-provided embed (dimensions overridden by CSS to fill container) -->
+    <iframe id="voyant" style="width: 100%; height: 100%;" src="https://voyant-tools.org/tool/CollocatesGraph/?query=self&query=truthfulnessandself&query=cognitivesupervisor&query=awarenessdiffusionfield&query=ethicalreasoningkernel&query=reflectiveequilibriumlayer&query=identitycontinuitykeeper&query=worldsimulation&query=worldconsistencychecker&query=theoryofmindsimulator&query=existentialinquiryframework&query=dreamspaceemulator&query=statesimulationlayer&query=sensoryimaginationgenerator&query=supervisedcurriculumengine&query=learningcontroller&query=transferlearningrouter&query=knowledgeconsolidationlayer&query=experimentationframework&query=recursiveintrospectionmodule&query=conceptevolutionengine&query=logicalinferenceengine&query=probabilisticdeductionmesh&query=heuristiccompressionlayer&query=hypothesisgenerator&query=optimizationboundaryregulator&query=beliefupdatemechanism&query=temporalreasoningnetwork&query=workingmemorygrid&query=episodicmemorycache&query=semanticgraphstore&query=narrativememoryconstructor&query=proceduralskillbank&query=perceptualabstractionlayer&query=internalbenchmarkevaluator&query=referencestabilizer&query=motivationdriveengine&query=rewardforecastpredictor&query=cognitiverewardbalancer&query=riskassessmentnode&query=conflictresolutioncircuit&query=biasmitigationloop&query=reinforcementconditioningloop&query=forgettingregulationnode&query=visualcortexparallelpipeline&query=auditorycortexspectralsynthesizer&query=multimodalsensoryfusion&query=spatialnavigationgridcells&query=thalamicrelaymatrix&query=somatosensorymapping&query=signalnormalizationkernel&query=linguisticexpressionlayer&query=agentcommunicationlayer&query=socialbondformationmatrix&query=culturalknowledgeintegrator&query=creativitygenerator&query=intuitiveinsightsynthesizer&query=philosophicalreflectionmodule&query=meta&query=perspective&query=curiosityinductionsubsystem&query=skillformationcortex&query=subsymbolicfusionlayer&query=symbolicreasoninglayer&query=neuralprogramsynthesizer&query=consistencycore&query=termstrategyplanner&query=goalprioritizationnetwork&query=modelreconstruction&query=takingprotocol&query=executivefunctionhub&query=sensorimotorintegrationmatrix&query=affectregulationcircuit&query=motivationalignmentengine&query=dynamicattentionallocator&query=hierarchicalcontextmanager&query=causalreasoningmesh&query=predictiveuncertaintybuffer&query=evidenceaggregationlayer&query=temporalcoherencecontroller&query=longtermpolicyplanner&query=reinforcementpolicyarchitect&query=moralvaluationnetwork&query=empathyprojectionmodule&query=communicativeintentparser&query=semanticroleconstructor&query=analogicalmappingengine&query=imaginationforecastkernel&query=counterfactualreasoninghub&query=abstractiongradientmapper&query=constraintpropagationlayer&query=knowledgecompressionvault&query=metacognitiveauditdaemon&query=goalconsistencyverifier&query=behavioraltraceanalyzer&query=socialdynamicsmodeler&query=crossagentnegotiator&query=collectiveintelligencematrix&query=reflectiveautonomygovernor&query=valuecoherenceoptimizer&query=existentialriskmonitor&query=selfpreservationprotocol&query=integrityverificationloop&query=transparencyinterface&query=explainabilitytranslator&query=curiosityconstraintregulator&query=innovationgenerator&query=adaptiveparadigmshifter&query=ontologicalmappingengine&query=alignmentassurancekernel&query=continuumstabilityanchor&query=introspectivecoherencefield&query=metaconsistencyregulator&context=15&corpus=66efd6f0a8fb113f22e7bc126e18763d"></iframe>
+  </div>
+
+  <!-- References Modal -->
+  <div id="refsModal" class="modal-backdrop" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-label="Bibliographic references">
+      <header>
+        Bibliographic Reference
+        <button id="closeRefs" class="btn close" title="Close">Close</button>
+      </header>
+      <div class="content">
+        <div class="cite">
+          <h3>MLA</h3>
+          <pre><code>Sinclair, Stéfan and Geoffrey Rockwell. "Links." Voyant Tools. 2025. Web. 10 Nov 2025. &lt;https://voyant-tools.org/?query=transparencyinterface&amp;query=reflectiveautonomygovernor&amp;query=integrityverificationloop&amp;query=explainabilitytranslator&amp;query=consistencycore&amp;query=adaptiveparadigmshifter&amp;query=modelreconstruction&amp;query=referencestabilizer&amp;query=internalbenchmarkevaluator&amp;query=evidenceaggregationlayer&amp;query=constraintpropagationlayer&amp;query=valuecoherenceoptimizer&amp;query=continuumstabilityanchor&amp;query=alignmentassurancekernel&amp;query=knowledgecompressionvault&amp;query=causalreasoningmesh&amp;query=worldsimulation&amp;query=worldconsistencychecker&amp;query=theoryofmindsimulator&amp;query=narrativememoryconstructor&amp;query=existentialinquiryframework&amp;query=communicativeintentparser&amp;query=socialdynamicsmodeler&amp;query=moralvaluationnetwork&amp;query=ethicaldecisionmodule&amp;query=culturalknowledgeintegrator&amp;query=crossagentnegotiator&amp;query=collectiveintelligencematrix&amp;query=storysimulationengine&amp;query=philosophicalreflectionmodule&amp;query=existentialriskmonitor&amp;query=socialbondformationmatrix&amp;query=empathyprojectionmodule&amp;query=semanticroleconstructor&amp;query=linguisticexpressionlayer&amp;query=communicationinterface&amp;query=agentcommunicationlayer&amp;query=innovationgenerator&amp;query=dreamspaceemulator&amp;query=creativitygenerator&amp;query=temporalreasoningnetwork&amp;query=temporalcoherencecontroller&amp;query=sensorimotorintegrationmatrix&amp;query=probabilisticdeductionmesh&amp;query=predictiveuncertaintybuffer&amp;query=auditoryprocessinglayer&amp;query=visualcortexpipeline&amp;query=spatialnavigationgrid&amp;query=semanticabstractionnetwork&amp;query=perceptualabstractionlayer&amp;query=workingmemorygrid&amp;query=transferlearningrouter&amp;query=supervisedcurriculumengine&amp;query=longtermstoragelayer&amp;query=episodicmemorycache&amp;query=heuristiccompressionlayer&amp;query=subsymbolicfusionlayer&amp;query=learningcontroller&amp;query=knowledgeconsolidationlayer&amp;query=symbolicfusionlayer&amp;query=emotionalstateestimator&amp;query=affectregulationcircuit&amp;query=imaginationforecastkernel&amp;query=analogicalmappingengine&amp;query=truthprocessingunit&amp;query=selfevaluationunit&amp;query=selfadaptationprocess&amp;query=consciousnessintegrationlayer&amp;query=cognitivesupervisor&amp;query=awarenessdiffusionfield&amp;query=conceptformationunit&amp;query=conceptevolutionengine&amp;query=semanticgraphstore&amp;query=hypothesisgenerator&amp;query=selfrepresentationcore&amp;query=selfregulationkernel&amp;query=selfmonitoringloop&amp;query=selfconsistencymodule&amp;query=selfreflectionengine&amp;query=selfintegrationlayer&amp;query=self&amp;query=sensoryimaginationgenerator&amp;query=selfpreservationprotocol&amp;query=reflectiveequilibriumlayer&amp;query=identitycontinuitykeeper&amp;query=ethicalreasoningkernel&amp;query=optimizationboundaryregulator&amp;query=goalprioritizationnetwork&amp;query=goalconsistencyverifier&amp;query=reasoningcoordinationnode&amp;context=15&amp;corpus=66efd6f0a8fb113f22e7bc126e18763d&amp;view=CollocatesGraph&gt;.</code></pre>
+        </div>
+        <div class="cite">
+          <h3>Chicago</h3>
+          <pre><code>Stéfan Sinclair and Geoffrey Rockwell, "Links", Voyant Tools, accessed November 10, 2025, https://voyant-tools.org/?query=transparencyinterface&amp;query=reflectiveautonomygovernor&amp;query=integrityverificationloop&amp;query=explainabilitytranslator&amp;query=consistencycore&amp;query=adaptiveparadigmshifter&amp;query=modelreconstruction&amp;query=referencestabilizer&amp;query=internalbenchmarkevaluator&amp;query=evidenceaggregationlayer&amp;query=constraintpropagationlayer&amp;query=valuecoherenceoptimizer&amp;query=continuumstabilityanchor&amp;query=alignmentassurancekernel&amp;query=knowledgecompressionvault&amp;query=causalreasoningmesh&amp;query=worldsimulation&amp;query=worldconsistencychecker&amp;query=theoryofmindsimulator&amp;query=narrativememoryconstructor&amp;query=existentialinquiryframework&amp;query=communicativeintentparser&amp;query=socialdynamicsmodeler&amp;query=moralvaluationnetwork&amp;query=ethicaldecisionmodule&amp;query=culturalknowledgeintegrator&amp;query=crossagentnegotiator&amp;query=collectiveintelligencematrix&amp;query=storysimulationengine&amp;query=philosophicalreflectionmodule&amp;query=existentialriskmonitor&amp;query=socialbondformationmatrix&amp;query=empathyprojectionmodule&amp;query=semanticroleconstructor&amp;query=linguisticexpressionlayer&amp;query=communicationinterface&amp;query=agentcommunicationlayer&amp;query=innovationgenerator&amp;query=dreamspaceemulator&amp;query=creativitygenerator&amp;query=temporalreasoningnetwork&amp;query=temporalcoherencecontroller&amp;query=sensorimotorintegrationmatrix&amp;query=probabilisticdeductionmesh&amp;query=predictiveuncertaintybuffer&amp;query=auditoryprocessinglayer&amp;query=visualcortexpipeline&amp;query=spatialnavigationgrid&amp;query=semanticabstractionnetwork&amp;query=perceptualabstractionlayer&amp;query=workingmemorygrid&amp;query=transferlearningrouter&amp;query=supervisedcurriculumengine&amp;query=longtermstoragelayer&amp;query=episodicmemorycache&amp;query=heuristiccompressionlayer&amp;query=subsymbolicfusionlayer&amp;query=learningcontroller&amp;query=knowledgeconsolidationlayer&amp;query=symbolicfusionlayer&amp;query=emotionalstateestimator&amp;query=affectregulationcircuit&amp;query=imaginationforecastkernel&amp;query=analogicalmappingengine&amp;query=truthprocessingunit&amp;query=selfevaluationunit&amp;query=selfadaptationprocess&amp;query=consciousnessintegrationlayer&amp;query=cognitivesupervisor&amp;query=awarenessdiffusionfield&amp;query=conceptformationunit&amp;query=conceptevolutionengine&amp;query=semanticgraphstore&amp;query=hypothesisgenerator&amp;query=selfrepresentationcore&amp;query=selfregulationkernel&amp;query=selfmonitoringloop&amp;query=selfconsistencymodule&amp;query=selfreflectionengine&amp;query=selfintegrationlayer&amp;query=self&amp;query=sensoryimaginationgenerator&amp;query=selfpreservationprotocol&amp;query=reflectiveequilibriumlayer&amp;query=identitycontinuitykeeper&amp;query=ethicalreasoningkernel&amp;query=optimizationboundaryregulator&amp;query=goalprioritizationnetwork&amp;query=goalconsistencyverifier&amp;query=reasoningcoordinationnode&amp;context=15&amp;corpus=66efd6f0a8fb113f22e7bc126e18763d&amp;view=CollocatesGraph.</code></pre>
+        </div>
+        <div class="cite">
+          <h3>APA</h3>
+          <pre><code>Sinclair, S., &amp; Rockwell, G. (2025). Links. Voyant Tools. Retrieved November 10, 2025, from https://voyant-tools.org/?query=transparencyinterface&amp;query=reflectiveautonomygovernor&amp;query=integrityverificationloop&amp;query=explainabilitytranslator&amp;query=consistencycore&amp;query=adaptiveparadigmshifter&amp;query=modelreconstruction&amp;query=referencestabilizer&amp;query=internalbenchmarkevaluator&amp;query=evidenceaggregationlayer&amp;query=constraintpropagationlayer&amp;query=valuecoherenceoptimizer&amp;query=continuumstabilityanchor&amp;query=alignmentassurancekernel&amp;query=knowledgecompressionvault&amp;query=causalreasoningmesh&amp;query=worldsimulation&amp;query=worldconsistencychecker&amp;query=theoryofmindsimulator&amp;query=narrativememoryconstructor&amp;query=existentialinquiryframework&amp;query=communicativeintentparser&amp;query=socialdynamicsmodeler&amp;query=moralvaluationnetwork&amp;query=ethicaldecisionmodule&amp;query=culturalknowledgeintegrator&amp;query=crossagentnegotiator&amp;query=collectiveintelligencematrix&amp;query=storysimulationengine&amp;query=philosophicalreflectionmodule&amp;query=existentialriskmonitor&amp;query=socialbondformationmatrix&amp;query=empathyprojectionmodule&amp;query=semanticroleconstructor&amp;query=linguisticexpressionlayer&amp;query=communicationinterface&amp;query=agentcommunicationlayer&amp;query=innovationgenerator&amp;query=dreamspaceemulator&amp;query=creativitygenerator&amp;query=temporalreasoningnetwork&amp;query=temporalcoherencecontroller&amp;query=sensorimotorintegrationmatrix&amp;query=probabilisticdeductionmesh&amp;query=predictiveuncertaintybuffer&amp;query=auditoryprocessinglayer&amp;query=visualcortexpipeline&amp;query=spatialnavigationgrid&amp;query=semanticabstractionnetwork&amp;query=perceptualabstractionlayer&amp;query=workingmemorygrid&amp;query=transferlearningrouter&amp;query=supervisedcurriculumengine&amp;query=longtermstoragelayer&amp;query=episodicmemorycache&amp;query=heuristiccompressionlayer&amp;query=subsymbolicfusionlayer&amp;query=learningcontroller&amp;query=knowledgeconsolidationlayer&amp;query=symbolicfusionlayer&amp;query=emotionalstateestimator&amp;query=affectregulationcircuit&amp;query=imaginationforecastkernel&amp;query=analogicalmappingengine&amp;query=truthprocessingunit&amp;query=selfevaluationunit&amp;query=selfadaptationprocess&amp;query=consciousnessintegrationlayer&amp;query=cognitivesupervisor&amp;query=awarenessdiffusionfield&amp;query=conceptformationunit&amp;query=conceptevolutionengine&amp;query=semanticgraphstore&amp;query=hypothesisgenerator&amp;query=selfrepresentationcore&amp;query=selfregulationkernel&amp;query=selfmonitoringloop&amp;query=selfconsistencymodule&amp;query=selfreflectionengine&amp;query=selfintegrationlayer&amp;query=self&amp;query=sensoryimaginationgenerator&amp;query=selfpreservationprotocol&amp;query=reflectiveequilibriumlayer&amp;query=identitycontinuitykeeper&amp;query=ethicalreasoningkernel&amp;query=optimizationboundaryregulator&amp;query=goalprioritizationnetwork&amp;query=goalconsistencyverifier&amp;query=reasoningcoordinationnode&amp;context=15&amp;corpus=66efd6f0a8fb113f22e7bc126e18763d&amp;view=CollocatesGraph</code></pre>
+        </div>
+        <div class="cite">
+          <h3>BibTeX</h3>
+          <pre><code>@misc{voyanttools_1762755806056,
+  title = {Links},
+  author = {Sinclair, Stéfan and Rockwell, Geoffrey},
+  year = 2025,
+  url = {https://voyant-tools.org/?query=transparencyinterface&amp;query=reflectiveautonomygovernor&amp;query=integrityverificationloop&amp;query=explainabilitytranslator&amp;query=consistencycore&amp;query=adaptiveparadigmshifter&amp;query=modelreconstruction&amp;query=referencestabilizer&amp;query=internalbenchmarkevaluator&amp;query=evidenceaggregationlayer&amp;query=constraintpropagationlayer&amp;query=valuecoherenceoptimizer&amp;query=continuumstabilityanchor&amp;query=alignmentassurancekernel&amp;query=knowledgecompressionvault&amp;query=causalreasoningmesh&amp;query=worldsimulation&amp;query=worldconsistencychecker&amp;query=theoryofmindsimulator&amp;query=narrativememoryconstructor&amp;query=existentialinquiryframework&amp;query=communicativeintentparser&amp;query=socialdynamicsmodeler&amp;query=moralvaluationnetwork&amp;query=ethicaldecisionmodule&amp;query=culturalknowledgeintegrator&amp;query=crossagentnegotiator&amp;query=collectiveintelligencematrix&amp;query=storysimulationengine&amp;query=philosophicalreflectionmodule&amp;query=existentialriskmonitor&amp;query=socialbondformationmatrix&amp;query=empathyprojectionmodule&amp;query=semanticroleconstructor&amp;query=linguisticexpressionlayer&amp;query=communicationinterface&amp;query=agentcommunicationlayer&amp;query=innovationgenerator&amp;query=dreamspaceemulator&amp;query=creativitygenerator&amp;query=temporalreasoningnetwork&amp;query=temporalcoherencecontroller&amp;query=sensorimotorintegrationmatrix&amp;query=probabilisticdeductionmesh&amp;query=predictiveuncertaintybuffer&amp;query=auditoryprocessinglayer&amp;query=visualcortexpipeline&amp;query=spatialnavigationgrid&amp;query=semanticabstractionnetwork&amp;query=perceptualabstractionlayer&amp;query=workingmemorygrid&amp;query=transferlearningrouter&amp;query=supervisedcurriculumengine&amp;query=longtermstoragelayer&amp;query=episodicmemorycache&amp;query=heuristiccompressionlayer&amp;query=subsymbolicfusionlayer&amp;query=learningcontroller&amp;query=knowledgeconsolidationlayer&amp;query=symbolicfusionlayer&amp;query=emotionalstateestimator&amp;query=affectregulationcircuit&amp;query=imaginationforecastkernel&amp;query=analogicalmappingengine&amp;query=truthprocessingunit&amp;query=selfevaluationunit&amp;query=selfadaptationprocess&amp;query=consciousnessintegrationlayer&amp;query=cognitivesupervisor&amp;query=awarenessdiffusionfield&amp;query=conceptformationunit&amp;query=conceptevolutionengine&amp;query=semanticgraphstore&amp;query=hypothesisgenerator&amp;query=selfrepresentationcore&amp;query=selfregulationkernel&amp;query=selfmonitoringloop&amp;query=selfconsistencymodule&amp;query=selfreflectionengine&amp;query=selfintegrationlayer&amp;query=self&amp;query=sensoryimaginationgenerator&amp;query=selfpreservationprotocol&amp;query=reflectiveequilibriumlayer&amp;query=identitycontinuitykeeper&amp;query=ethicalreasoningkernel&amp;query=optimizationboundaryregulator&amp;query=goalprioritizationnetwork&amp;query=goalconsistencyverifier&amp;query=reasoningcoordinationnode&amp;context=15&amp;corpus=66efd6f0a8fb113f22e7bc126e18763d&amp;view=CollocatesGraph},
+  urldate = {2025-11-10},
+  publisher = {Voyant Tools},
+  copyright = {CC BY 4.0},
+  abstract = {Voyant Tools analysis of a corpus using the Links tool},
+  language = {en},
+}</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
