@@ -104,3 +104,5 @@ Toronto, Ontario.
 *This license draws on standard proprietary license terms such as prohibitions
 on reverse engineering and redistribution, but is deliberately stricter: 
 no rights are granted and use is limited exclusively to authorized Company personnel.*
+
+###### RAiTHE INDUSTRIES INC. © 2025
