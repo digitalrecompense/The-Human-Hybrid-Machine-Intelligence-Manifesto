@@ -121,8 +121,10 @@ V
 Human and digital cognition thus evolve in closed mutual loops — true co-agency.
 
 <br>
-🝬
-ETHICAL FIELD
+
+### 🝬  
+### **ETHICAL FIELD**
+<br>
 
 Define a differentiable ethics function
 
@@ -136,8 +138,11 @@ dΘ/dt = −∇<sub>Θ</sub>(L<sub>ethic</sub> + γ‖Θ − Θ<sub>ref</sub>‖
 Ethics is treated as a cognitive organ — adaptive yet anchored.
 
 <br>
-🕸
-REFLEXIVE GRAPH
+
+### 🕸  
+### **REFLEXIVE GRAPH**
+
+<br>
 
 Cognition is represented by a typed hybrid reasoning graph
 
@@ -156,13 +161,15 @@ Typing progress and preservation within G
 R enforces coherence and semantic integrity without halting the system.
 
 <br>
-🝃
-THE LANGUAGE CORE
+
+### 🝃  
+### **THE LANGUAGE CORE**
 
 Cynric unites the finest traits of its ancestors:
 
 <table> <tr><td align="right">🜬</td><td align="left"><b>Rust</b> → safety, ownership, deterministic concurrency</td></tr> <tr><td align="right">🜭</td><td align="left"><b>Julia</b> → mathematical clarity, differentiable numerics</td></tr> <tr><td align="right">🜮</td><td align="left"><b>Python</b> → accessibility, human readability</td></tr> <tr><td align="right">🜯</td><td align="left"><b>Lisp</b> → metaprogramming, self-reflection</td></tr> </table> <br>
-Native Cynric types include:
+
+### **Native Cynric types include:**
 
 tensor, symbol, belief, ethics, trace, context, invariant
 
