@@ -71,7 +71,7 @@ During learning and adaptation:
 <br>
 This is the Cynric Invariant — the core law preventing divergence of identity, empathy, or purpose.
 
-<br>
+<br><br>
 
 ### 🝈  
 ### **EMPATHIC ALIGNMENT**
@@ -174,8 +174,7 @@ tensor, symbol, belief, ethics, trace, context, invariant
 
 <br>
 
-Each function carries a traceable proof of its reasoning.  
-Every computation preserves semantic and moral continuity.
+Each function carries a traceable proof of its reasoning. Every computation preserves semantic and moral continuity.
 
 <br><br>
 
