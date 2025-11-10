@@ -146,8 +146,7 @@ Cognition is represented by a hybrid reasoning graph:
 
 <br>
 
-Nodes (V) may be neural, symbolic, ethical, or memory types.  
-A Reflexive Monitor R continuously checks for Zero-Separation stability, semantic integrity, and coherence across the reasoning graph.
+Nodes (V) may be neural, symbolic, ethical, or memory types. A Reflexive Monitor R continuously checks for Zero-Separation stability, semantic integrity, and coherence across the reasoning graph.
 
 <br>
 
