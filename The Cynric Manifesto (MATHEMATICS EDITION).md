@@ -126,7 +126,7 @@ Define a differentiable ethics function:
 
 <br>
 
-Θ = M<sub>φ</sub>(H, D, C)
+### **Θ = M<sub>φ</sub>(H, D, C)**
 
 <br>
 
@@ -142,7 +142,7 @@ Cognition is represented by a hybrid reasoning graph:
 
 <br>
 
-G = (V, E)
+### **G = (V, E)**
 
 <br>
 
