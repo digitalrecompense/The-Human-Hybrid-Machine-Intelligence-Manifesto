@@ -2,7 +2,6 @@
 
 # 🜛  
 # **Cynric Development Plan — Grounded Framework**
----
 
 </div>
 
