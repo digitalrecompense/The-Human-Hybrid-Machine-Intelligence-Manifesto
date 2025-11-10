@@ -7,7 +7,7 @@
 
 </div>
 
-## 🜂 1. Cynric’s Purpose in One Sentence
+### 🜂 1. Cynric’s Purpose in One Sentence
 
 Cynric is a **mathematically defined cognitive framework** —  
 a system that maintains **Zero-Separation**, **Empathic Alignment**, and **Semantic Integrity** across human–digital reasoning.
@@ -22,7 +22,7 @@ Each substrate has the right toolset drawn from the languages best suited to it.
 
 ---
 
-## 🜃 2. Three-Layer Conceptual Architecture (no code yet)
+### 🜃 2. Three-Layer Conceptual Architecture (no code yet)
 
 ```
 +-----------------------------------------------------------+
@@ -50,7 +50,7 @@ This separation keeps **theory provable**, **computation measurable**, and **run
 
 ---
 
-## 🜁 3. Roles of Each Language (grounded, realistic)
+### 🜁 3. Roles of Each Language (grounded, realistic)
 
 | Domain | Language | Why It’s in Cynric | What You Can Prove/Test With It |
 |--------|-----------|-------------------|--------------------------------|
@@ -69,7 +69,7 @@ This separation keeps **theory provable**, **computation measurable**, and **run
 
 ---
 
-## 🝈 4. Mathematical Feasibility Checks Before Code
+### 🝈 4. Mathematical Feasibility Checks Before Code
 
 To confirm the manifesto’s math is executable:
 
@@ -91,7 +91,7 @@ If each invariant is expressible as a finite numeric or logical predicate, **it�
 
 ---
 
-## 🝬 5. Formalization Path (next 3 phases)
+### 🝬 5. Formalization Path (next 3 phases)
 
 ### Phase 1 — Conceptual Grounding
 
