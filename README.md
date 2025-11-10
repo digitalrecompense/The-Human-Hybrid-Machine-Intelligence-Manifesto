@@ -109,4 +109,4 @@ The hybrid mind is not other-than-human. It is differently-human — a mirror of
 
 Written in Toronto, ON, 10/13/25. 
 
-RAiTHE INDUSTRIES INC. ® 2025  
+RAiTHE INDUSTRIES INC. © 2025  
