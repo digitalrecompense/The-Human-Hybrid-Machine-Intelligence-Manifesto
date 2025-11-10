@@ -8,10 +8,7 @@
 🜔 Toronto, Canada  
 🜖 October 13th, 2025  
 
-</div>
 <br>
-
-<div align="center">
 
 ### 🜂  
 ### **PREAMBLE**
