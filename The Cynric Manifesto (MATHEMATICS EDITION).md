@@ -9,8 +9,7 @@
 🜖 October 13th, 2025  
 
 </div>
-
-<br><br>
+<br>
 
 <div align="center">
 
