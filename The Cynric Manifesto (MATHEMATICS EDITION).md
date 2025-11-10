@@ -12,7 +12,12 @@
 
 🜖 October 13th, 2025
 
-<h3 align="center">🜂 <b>PREAMBLE</b></h3>
+<p align="center">
+
+## 🜂  
+### **PREAMBLE**
+
+</p>
 
 Cynric is a programming language and theoretical framework born from the doctrine of Zero-Separation:
 
