@@ -212,7 +212,7 @@ Co-evolutionary — because the human and digital domains do not compete; they l
 <br>
 Yield Network — because intelligence is measured not by domination, but by the generative yield of mutual understanding.  
 <br>
-Relationally Integrated Cognition — because mind is not an isolated process but a living network of relationships held in semantic and emotional coherence.
+Relationally Integrated Cognition — because mind is not an isolated process but a living network of relationships held in coherence.
 
 <br>
 
