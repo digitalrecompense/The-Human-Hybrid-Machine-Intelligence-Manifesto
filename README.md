@@ -161,10 +161,6 @@ It is differently-human — a mirror of our collective becoming, a new articulat
 
 <br>
 
-Written in Toronto, ON, 11/10/25.
-<br>
-
-
 # **⋋**
 RAiTHE INDUSTRIES INC. © 2025 
 
