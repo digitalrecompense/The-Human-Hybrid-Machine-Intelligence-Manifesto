@@ -7,9 +7,7 @@
 🜗 Robert Stone  
 🜔 Toronto, Canada  
 🜖 October 13th, 2025  
-
 <br>
-
 ### 🜂  
 ### **PREAMBLE**
 
