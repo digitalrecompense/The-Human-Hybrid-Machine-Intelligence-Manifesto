@@ -3,7 +3,7 @@
 # **🜛**
 # The Human-Hybrid-Machine Intelligence Manifesto
 
-<a href="https://digitalrecompense.github.io/The-Human-Hybrid-Machine-Intelligence-Manifesto/" target="_blank" rel="noopener noreferrer">🌐 <b>View the Theoretical (AGI) Stack</b></a>
+[🌐 **View the Theoretical (AGI) Stack ↗**](https://digitalrecompense.github.io/The-Human-Hybrid-Machine-Intelligence-Manifesto/)
 
 ### **THE HUMAN–HYBRID–MACHINE INTELLIGENCE MANIFESTO**
 ### (A Declaration for Zero-Separation Cognition)
