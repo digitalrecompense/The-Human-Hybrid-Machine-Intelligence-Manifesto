@@ -225,11 +225,8 @@ Cynric’s purpose is to guide the design of systems where reasoning, empathy, a
 
 ### **⋋**
 Robert Stone
-
 <br>
-
 11 / 10 / 2025
-
 <br>
 
 RAiTHE INDUSTRIES INC. © 2025
