@@ -1,7 +1,9 @@
 🜛 THE CYNRIC MANIFESTO (MATHEMATICS EDITION)
 
 🜗 Robert Stone
+
 🜔 Toronto, Canada
+
 🜖 October 13th, 2025
 
 🜂 PREAMBLE
