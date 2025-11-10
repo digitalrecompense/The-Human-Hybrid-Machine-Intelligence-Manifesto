@@ -49,9 +49,8 @@ This combined structure is called beliefspace.
 <br>
 
 Beliefspace defines probability distributions over propositions P:
-<br><br>
+<br>
 ### **B = (Δ(P), Σ, μ)**
-
 <br>
 
 The mapping μ preserves meaning — ensuring semantic integrity is never lost through optimization or compression.
