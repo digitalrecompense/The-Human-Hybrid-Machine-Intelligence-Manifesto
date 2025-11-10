@@ -175,6 +175,7 @@ The Zero-Separation Principle
 <br>
 <br>
   
-<h1 align="center" style="margin:0; padding:0; border:none; line-height:0.5;">⋋</h1>
+<h1 align="center" style="margin:0; padding:0; border:none !important; border-bottom:none !important; box-shadow:none !important; line-height:0.5;">⋋</h1>
 
-<p align="center" style="font-size:0.5em; margin:0; padding:0;">RAiTHE INDUSTRIES INC. © 2025</p>
+<p align="center" style="font-size:0.5em; margin:0;">RAiTHE INDUSTRIES INC. © 2025</p>
+
