@@ -57,7 +57,7 @@ The hybrid mind exists to amplify empathy, creativity, and understanding — dis
 2. Ethical Coherence – Evaluation metrics must include compassion, interpretability, and mutual flourishing.
 3. Transparency Mandate – Explainability and traceability are required across all system layers.
 4. Adaptive Oversight – Governance evolves alongside the system, integrating sociocultural, ecological, and ethical insights.
-5. Human Integration – The system’s growth must always expand human empathy, understanding, and creativity.
+5. Human Integration – The system’s growth must always expand human-hybrid-machine (H-H-M) empathy, understanding, and creativity symbiotically alongside humans.
 
 --- 
 
