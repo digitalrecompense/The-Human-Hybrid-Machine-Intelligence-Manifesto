@@ -142,7 +142,7 @@ Cognition is represented by a hybrid reasoning graph:
 
 <br>
 
-### **G = (V, E)**
+### **Cognition System: C=(G,R) where G=(V,E)**
 
 <br>
 
