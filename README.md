@@ -1,7 +1,7 @@
+<div align="center">
+
 # The Human-Hybrid-Machine Intelligence Manifesto
 **By Robert Stone** 
-
-<div align="center">
 
 [🌐 **View the Theoretical (AGI) Stack**](https://digitalrecompense.github.io/The-Human-Hybrid-Intelligence-Manifesto/)
 
