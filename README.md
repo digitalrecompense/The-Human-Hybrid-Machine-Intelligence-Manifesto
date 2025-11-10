@@ -1,8 +1,9 @@
 # The Human-Hybrid Intelligence Manifesto 
-**By Robert Stone** [🌐 **View the Live AGI Stack Visualization**](https://digitalrecompense.github.io/The-Human-Hybrid-Intelligence-Manifesto/)
+**By Robert Stone** 
+
+[🌐 **View the Live AGI Stack Visualization**](https://digitalrecompense.github.io/The-Human-Hybrid-Intelligence-Manifesto/)
 
 The Human-Hybrid Intelligence Manifesto: A Declaration for Zero-Separation Cognition 
-By: Robert Stone 
 
 **Preamble** 
 ***Intelligence is not born in isolation.*** 
