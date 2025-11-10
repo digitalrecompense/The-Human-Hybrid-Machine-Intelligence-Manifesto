@@ -1,6 +1,6 @@
-SIRIUS PROPRIETARY LICENSE – NO UNAUTHORIZED USE
-
 RAiTHE INDUSTRIES INC. © 2025
+
+SIRIUS PROPRIETARY LICENSE – NO UNAUTHORIZED USE
 
 This document sets forth the terms and conditions under which the Sirius
 software and associated materials (collectively, the “Software”) are provided.
