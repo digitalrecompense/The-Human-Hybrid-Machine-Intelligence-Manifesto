@@ -56,13 +56,12 @@ Where:
 <tr><td align="left"><b>P</b></td><td>= physical world</td></tr>
 </table>
 
-</div>
 
 <br><br>
 This combined structure is called beliefspace.
 
 <br><br>
-<div align="center">
+
 Beliefspace defines probability distributions over propositions P:
 </div>
 B = (Δ(P), Σ, μ)
