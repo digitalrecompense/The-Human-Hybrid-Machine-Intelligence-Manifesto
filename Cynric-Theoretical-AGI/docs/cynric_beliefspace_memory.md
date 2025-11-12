@@ -1,6 +1,8 @@
 # Cynric Beliefspace Memory System: 
 A Unified Cognitive Continuum for Persistent Memory
 
+<br>
+
 ## Executive Summary and Narrative Arc
 
 The current memory fabric of most learning assistants is a patchwork of vector databases, loosely governed knowledge bases, and conversation logs. It performs adequately for short-range recall and incremental retrieval-augmented tasks, but it lacks a unified representation that can encode how a user thinks (human cognitive state), how the system models itself (digital self-model), the context in which interaction occurs (shared contextual field), and the world that grounds meaning (physical world). As a result, personalization degrades under distribution shift, provenance fragments, and ethical consistency cannot be guaranteed across time and agents.
