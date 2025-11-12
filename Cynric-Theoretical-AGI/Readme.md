@@ -56,7 +56,7 @@ Ethics as an adaptive cognitive organ rather than external constraint.
 ## 📚 Documentation
 
 ### Core Publications
-- **[Cynric_Enhanced_Learning_Assistant_Architecture.md](./docs/Cynric_Enhanced_Learning_Assistant_Architecture.md)** - Complete architectural specification
+- **[Cynric_Enhanced_Learning_Assistant_Architecture.md]([./docs/Cynric_Enhanced_Learning_Assistant_Architecture.md](https://github.com/digitalrecompense/The-Human-Hybrid-Machine-Intelligence-Manifesto/blob/main/Cynric-Theoretical-AGI/CYNRIC_ENHANCED_LEARNING_ASSISTANT_ARCHITECTURE.md))** - Complete architectural specification
 - **[Zero-Separation Orchestration](./docs/cynric_zero_separation_orchestration.md)** - Implementation of ontological continuity
 - **[Beliefspace Memory System](./docs/cynric_beliefspace_memory.md)** - Unified cognitive memory architecture
 - **[Empathy Integration](./docs/cynric_empathy_learning.md)** - Energy-based stability mechanisms
