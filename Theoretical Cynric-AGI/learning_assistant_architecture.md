@@ -1,4 +1,6 @@
-# Learning Assistant LLM Agent System: Technical Architecture and Implementation
+# Learning Assistant LLM Agent System: 
+
+# Technical Architecture and Implementation
 
 ## 1. Executive Summary
 
