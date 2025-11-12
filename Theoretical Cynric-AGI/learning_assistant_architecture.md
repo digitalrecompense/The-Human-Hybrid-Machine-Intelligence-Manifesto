@@ -2,7 +2,7 @@
 
 ## Technical Architecture and Implementation
 
-## 1. Executive Summary
+### 1. Executive Summary
 
 This document presents the complete technical architecture and implementation roadmap for a modular, self-improving, and production-ready Learning Assistant powered by a multi-agent Large Language Model (LLM) system. The proposed architecture is designed to deliver a personalized, friendly, and highly effective learning experience by integrating cutting-edge research in agentic AI, memory systems, and user interface design.
 
@@ -20,7 +20,7 @@ The technology stack is a pragmatic, polyglot approach, leveraging Python for ra
 
 This architecture is not just a theoretical blueprint; it is a practical guide to building a system that is reliable, scalable, secure, and cost-effective. By following the phased implementation roadmap, we can incrementally deliver value while building a powerful and extensible platform for the future of personalized learning.
 
-## 2. Architecture Overview
+### 2. Architecture Overview
 
 The Learning Assistant LLM Agent System is a modular, microservices-based architecture designed for scalability, maintainability, and continuous improvement. The architecture is composed of seven core layers, each with a distinct set of responsibilities, which work in concert to deliver a seamless and intelligent user experience.
 
@@ -63,7 +63,7 @@ The system is designed for production deployment in a cloud-native environment. 
 
 ![Figure 5: Deployment Architecture](docs/deployment_architecture.png)
 
-## 3. Technology Stack
+### 3. Technology Stack
 
 The technology stack for the Learning Assistant LLM Agent System is a carefully selected, polyglot architecture that balances developer productivity, performance, scalability, and cost-effectiveness. The stack is designed to leverage the strengths of different languages for different parts of the system, resulting in a highly optimized and maintainable architecture.
 
@@ -90,7 +90,7 @@ The decision to adopt a polyglot stack is driven by the unique demands of a mult
 
 Interoperability between the different language components is achieved through well-defined service boundaries, lightweight data formats (e.g., JSON), and gRPC for internal service calls. This ensures that the polyglot architecture is not only performant but also maintainable and extensible.
 
-## 4. Core System Modules
+### 4. Core System Modules
 
 The Learning Assistant LLM Agent System is composed of several core modules, each with a specific set of responsibilities. These modules are designed to be independent and loosely coupled, allowing for parallel development and independent scaling.
 
@@ -143,7 +143,7 @@ This module provides deep insights into system performance, with distributed tra
 *   **Key Responsibilities**: Distributed tracing, telemetry, cost/latency dashboards, evaluation of retrieval and generation quality.
 *   **Recommended Approach**: A unified observability stack that correlates events, aggregates signals, and visualizes KPIs.
 
-## 5. Implementation Roadmap
+### 5. Implementation Roadmap
 
 The implementation of the Learning Assistant LLM Agent System is planned in four distinct phases, allowing for incremental delivery of value and continuous feedback. Each phase builds upon the previous one, culminating in a fully-featured, enterprise-grade system.
 
@@ -179,7 +179,7 @@ This final phase focuses on adding enterprise-grade features, including advanced
 *   **Integration Capabilities**: Develop a plugin architecture and an API extension framework.
 *   **Governance and Compliance**: Implement a comprehensive audit system and create compliance monitoring dashboards.
 
-## 6. Code Structure
+### 6. Code Structure
 
 The recommended code structure is a modular, microservices-based architecture, with a clear separation of concerns between the different components. This structure promotes maintainability, testability, and independent deployment.
 
@@ -214,7 +214,7 @@ Each directory in the recommended file organization represents a distinct module
 
 This modular design allows for independent development and deployment of each component, and it makes it easier to reason about the system as a whole.
 
-## 7. Deployment Strategy
+### 7. Deployment Strategy
 
 The deployment strategy for the Learning Assistant LLM Agent System is a cloud-native approach, leveraging containerization and orchestration to ensure scalability, reliability, and maintainability.
 
@@ -226,7 +226,7 @@ The production deployment architecture, as illustrated in the architecture overv
 
 A robust CI/CD pipeline is essential for ensuring the quality and reliability of the system. The CI/CD pipeline should include automated testing, static code analysis, and a staged rollout process with canary deployments and automated rollbacks.
 
-## 8. Future Enhancements
+### 8. Future Enhancements
 
 The modular and extensible architecture of the Learning Assistant LLM Agent System provides a solid foundation for future enhancements. The following are some potential areas for future development:
 
@@ -237,7 +237,7 @@ The modular and extensible architecture of the Learning Assistant LLM Agent Syst
 *   **Enhanced Voice and Multimodal Interactions**: Continue to refine the voice and multimodal interaction capabilities of the system, making it even more natural and intuitive to use.
 
 
-## 9. Sources
+### 9. Sources
 
 This report was synthesized from a wide range of research materials, including technical documentation, research papers, and industry best practices. The following is a selection of the key sources that informed the architecture and design of the Learning Assistant LLM Agent System.
 
